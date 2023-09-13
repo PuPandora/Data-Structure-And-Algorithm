@@ -4,30 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Program
+public static class SelectionSort
 {
-    static void Main(string[] args)
-    {
-
-        int[] intArr = new int[100000];
-
-        //MakeRandomArray(intArr);
-        Console.WriteLine("10만개의 데이터 랜덤 배열 생성 중...");
-        MakeRandomArray(intArr, 0, 1000);
-        Console.WriteLine("=== 랜덤 배열 ===");
-        //PrintArray(intArr);
-
-        Console.WriteLine("\n\n");
-
-        Console.WriteLine("10만개의 데이터 선택 정렬 중...");
-        SelectionSort(intArr);
-        Console.WriteLine("=== 선택 정렬 배열 ===");
-        //PrintArray(intArr);
-        Console.WriteLine("선택 정렬 10만개 끝");
-    }
 
     #region Create Random Array Function
-    static void MakeRandomArray(int[] array)
+    public static void MakeRandomArray(int[] array)
     {
         // Make random list as array length.
         Random random = new Random();
@@ -48,7 +29,7 @@ internal class Program
         }
     }
 
-    static void MakeRandomArray(int[] array, int max)
+    public static void MakeRandomArray(int[] array, int max)
     {
         Random random = new Random();
 
@@ -58,7 +39,7 @@ internal class Program
         }
     }
 
-    static void MakeRandomArray(int[] array, int min, int max)
+    public static void MakeRandomArray(int[] array, int min, int max)
     {
         Random random = new Random();
 
@@ -69,7 +50,7 @@ internal class Program
     }
     #endregion
 
-    static void PrintArray(int[] array)
+    public static void PrintArray(int[] array)
     {
         for (int i = 0; i < array.Length; i += 10)
         {
@@ -81,7 +62,7 @@ internal class Program
         }
     }
 
-    static void SelectionSort(int[] array)
+    public static void Sort(int[] array)
     {
         // 1. 현재 i번째 요소의 값을 a, b로 저장한다.
         // 2. 요소 값 보다 작은게 있다면 b에 대입한다.

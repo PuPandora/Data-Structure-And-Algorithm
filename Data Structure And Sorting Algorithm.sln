@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00List", "Data Structure\00
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting Algorithm", "Sorting Algorithm", "{21EBD320-F198-4DD0-BAF7-EF9188461F7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00SelectionSort", "Sorting Algorithm\00SelectionSort\00SelectionSort.csproj", "{54BEFB96-2D1F-4CBE-8777-42FE28813431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Sorting Algorithm\Main.csproj", "{54BEFB96-2D1F-4CBE-8777-42FE28813431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
