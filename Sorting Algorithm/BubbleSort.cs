@@ -39,9 +39,9 @@ public static class BubbleSort
         PrintOperationCount(comparisonCount, swapCount);
     }
 
-    private static void PrintOperationCount(int comparison, int swap)
+    private static void PrintOperationCount(int comparisonCount, int swapCount)
     {
-        Console.WriteLine($"비교 횟수 : {comparison}\n교환 횟수 : {swap}\n");
+        Console.WriteLine($"비교 횟수 : {comparisonCount}\n교환 횟수 : {swapCount}\n");
         Console.WriteLine("===== ===== ===== =====\n");
     }
 }
