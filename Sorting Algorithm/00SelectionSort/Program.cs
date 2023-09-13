@@ -9,18 +9,21 @@ internal class Program
     static void Main(string[] args)
     {
 
-        int[] intArr = new int[100];
+        int[] intArr = new int[100000];
 
         //MakeRandomArray(intArr);
+        Console.WriteLine("10만개의 데이터 랜덤 배열 생성 중...");
         MakeRandomArray(intArr, 0, 1000);
         Console.WriteLine("=== 랜덤 배열 ===");
-        PrintArray(intArr);
+        //PrintArray(intArr);
 
         Console.WriteLine("\n\n");
 
+        Console.WriteLine("10만개의 데이터 선택 정렬 중...");
         SelectionSort(intArr);
         Console.WriteLine("=== 선택 정렬 배열 ===");
-        PrintArray(intArr);
+        //PrintArray(intArr);
+        Console.WriteLine("선택 정렬 10만개 끝");
     }
 
     #region Create Random Array Function
@@ -70,7 +73,7 @@ internal class Program
     {
         for (int i = 0; i < array.Length; i += 10)
         {
-            for (int j = 1; j < 10; j++)
+            for (int j = 1; j < array.Length/10; j++)
             {
                 Console.Write($"{i + j} : {array[i + j]} | ");
             }
