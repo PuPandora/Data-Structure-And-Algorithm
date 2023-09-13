@@ -6,62 +6,6 @@ using System.Threading.Tasks;
 
 public static class SelectionSort
 {
-
-    #region Create Random Array Function
-    public static void MakeRandomArray(int[] array)
-    {
-        // Make random list as array length.
-        Random random = new Random();
-        int total = array.Length;
-        List<int> randList = new List<int>(total);
-
-        for (int i = 0; i < total; i++)
-        {
-            randList.Add(i);
-        }
-
-        for (int i = 0; i < array.Length; i++)
-        {
-            int randNum = random.Next(0, randList.Count);
-            array[i] = randList[randNum];
-
-            randList.RemoveAt(randNum);
-        }
-    }
-
-    public static void MakeRandomArray(int[] array, int max)
-    {
-        Random random = new Random();
-
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = random.Next(0, max);
-        }
-    }
-
-    public static void MakeRandomArray(int[] array, int min, int max)
-    {
-        Random random = new Random();
-
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = random.Next(min, max);
-        }
-    }
-    #endregion
-
-    public static void PrintArray(int[] array)
-    {
-        for (int i = 0; i < array.Length; i += 10)
-        {
-            for (int j = 1; j < array.Length/10; j++)
-            {
-                Console.Write($"{i + j} : {array[i + j]} | ");
-            }
-            Console.WriteLine();
-        }
-    }
-
     public static void Sort(int[] array)
     {
         // 1. 현재 i번째 요소의 값을 a, b로 저장한다.

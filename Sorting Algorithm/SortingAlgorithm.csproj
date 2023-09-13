@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{54BEFB96-2D1F-4CBE-8777-42FE28813431}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_00SelectionSort</RootNamespace>
-    <AssemblyName>00SelectionSort</AssemblyName>
+    <RootNamespace>SortingAlgorithm</RootNamespace>
+    <AssemblyName>SortingAlgorithm</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BubbleSort.cs" />
+    <Compile Include="_Program.cs" />
     <Compile Include="SelectionSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

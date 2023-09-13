@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 static class Array
 {
+    private static Random random = new Random();
+
     public static void SetArraySize(out int[] array)
     {
         Console.Write("생성할 배열 크기를 입력해주세요.\n >> ");
@@ -35,16 +37,19 @@ static class Array
 
     public static void MakeRandomArray(int[] array, int min, int max)
     {
-        Random random = new Random();
-
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = random.Next(min, max);
         }
     }
+
+    public static void MakerandomArray(int[] array, int max)
+    {
+        MakeRandomArray(array, 0, max);
+    }
 }
 
-internal class Program
+internal class _Program
 {
     static int[] intArr;
 
