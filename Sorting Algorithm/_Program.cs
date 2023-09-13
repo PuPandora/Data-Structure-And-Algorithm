@@ -37,6 +37,8 @@ static class Array
 
     public static void MakeRandomArray(int[] array, int min, int max)
     {
+        Console.WriteLine("\n===== 랜덤 배열 생성 =====\n");
+
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = random.Next(min, max);
@@ -58,12 +60,13 @@ internal class _Program
         Array.SetArraySize(out intArr);
         Array.PrintArrayLength(intArr);
 
-        Console.WriteLine("\n===== 랜덤 배열 생성 =====\n");
-        Array.MakeRandomArray(intArr, 0, 100);
+        Array.MakeRandomArray(intArr, 0, 10);
         Array.PrintArray(intArr);
 
-        Console.WriteLine("\n===== 선택 정렬 =====\n");
-        SelectionSort.Sort(intArr);
+        BubbleSort.Sort(intArr);
+
+        //Console.WriteLine("\n===== 선택 정렬 =====\n");
+        //SelectionSort.Sort(intArr);
 
         Array.PrintArray(intArr);
     }
