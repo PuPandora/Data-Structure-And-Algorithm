@@ -17,7 +17,7 @@ static class Array
         array = new int[inputSize];
     }
 
-    public static void SetarraySize(int[] array, int size)
+    public static void SetArraySize(int[] array, int size)
     {
         array = new int[size];
     }
@@ -49,25 +49,39 @@ static class Array
     {
         MakeRandomArray(array, 0, max);
     }
+
+    public static void MakeSortedArray(int[] array)
+    {
+        Console.WriteLine("\n===== 정렬 배열 생성 =====\n");
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = i;
+        }
+    }
 }
 
 internal class _Program
 {
-    static int[] intArr;
+    static int[] intRandArr;
+    static int[] intSortedArr;
 
     static void Main(string[] args)
     {
-        Array.SetArraySize(out intArr);
-        Array.PrintArrayLength(intArr);
+        Array.SetArraySize(out intRandArr);
+        Array.SetArraySize(out intSortedArr);
 
-        Array.MakeRandomArray(intArr, 0, 10);
-        Array.PrintArray(intArr);
+        Array.PrintArrayLength(intRandArr);
 
-        BubbleSort.Sort(intArr);
+        Array.MakeRandomArray(intRandArr, 0, 10);
+        Array.MakeSortedArray(intSortedArr);
+        Array.PrintArray(intRandArr);
 
-        //Console.WriteLine("\n===== 선택 정렬 =====\n");
-        //SelectionSort.Sort(intArr);
+        //BubbleSort.Sort(intRandArr);
+        //BubbleSort.Sort(intSortedArr);
+        SelectionSort.Sort(intRandArr);
+        SelectionSort.Sort(intSortedArr);
 
-        Array.PrintArray(intArr);
+        Array.PrintArray(intRandArr);
     }
 }
