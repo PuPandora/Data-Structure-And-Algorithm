@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortingAlgorithm;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -77,10 +78,10 @@ internal class _Program
         Array.MakeSortedArray(intSortedArr);
         Array.PrintArray(intRandArr);
 
-        //BubbleSort.Sort(intRandArr);
-        //BubbleSort.Sort(intSortedArr);
-        SelectionSort.Sort(intRandArr);
-        SelectionSort.Sort(intSortedArr);
+        Sort.BubbleSort(intRandArr);
+        Sort.BubbleSort(intSortedArr);
+        //Sort.SelectionSort(intRandArr);
+        //Sort.SelectionSort(intSortedArr);
 
         Array.PrintArray(intRandArr);
     }
