@@ -96,7 +96,7 @@ internal class _Program
 
                 case ConsoleKey.D3:
                     Console.Clear();
-                    Console.WriteLine("\n프로그램을 종료합니다...\n\n");
+                    Console.WriteLine("프로그램을 종료합니다...\n\n");
                     programRun = false;
                     break;
 
@@ -118,8 +118,8 @@ internal class _Program
 
             Console.WriteLine("1. 선택 정렬");
             Console.WriteLine("2. 버블 정렬");
-            //Console.WriteLine("3. 삽입 정렬");
-            Console.WriteLine("3. 나가기");
+            Console.WriteLine("3. 삽입 정렬");
+            Console.WriteLine("4. 나가기");
 
             switch (Console.ReadKey().Key)
             {
@@ -136,6 +136,12 @@ internal class _Program
                     break;
 
                 case ConsoleKey.D3:
+                    Console.Clear();
+                    Array.PrintArray(intRandArr);
+                    Sort.InsertionSort(intRandArr);
+                    break;
+
+                case ConsoleKey.D4:
                     Console.Clear();
                     isRun = false;
                     isExit = true;
