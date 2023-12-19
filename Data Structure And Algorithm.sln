@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Structure", "Data Structure", "{CADD3547-6CA5-4B1B-B17A-19F751FE9E67}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00List", "Data Structure\00List\00List.csproj", "{F4771BD6-6E4A-4805-9ADB-0848F496EC37}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting Algorithm", "Sorting Algorithm", "{21EBD320-F198-4DD0-BAF7-EF9188461F7A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithm", "Sorting Algorithm\SortingAlgorithm.csproj", "{54BEFB96-2D1F-4CBE-8777-42FE28813431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerable IEnumerator", "Data Structure\IEnumerable IEnumerator\IEnumerable IEnumerator.csproj", "{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "DataStructure\DataStructure.csproj", "{DD3DFD37-657C-4212-88D3-D76A89BA770F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerable IEnumerator", "IEnumerable IEnumerator\IEnumerable IEnumerator.csproj", "{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4771BD6-6E4A-4805-9ADB-0848F496EC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4771BD6-6E4A-4805-9ADB-0848F496EC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4771BD6-6E4A-4805-9ADB-0848F496EC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4771BD6-6E4A-4805-9ADB-0848F496EC37}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54BEFB96-2D1F-4CBE-8777-42FE28813431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54BEFB96-2D1F-4CBE-8777-42FE28813431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54BEFB96-2D1F-4CBE-8777-42FE28813431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54BEFB96-2D1F-4CBE-8777-42FE28813431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3DFD37-657C-4212-88D3-D76A89BA770F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3DFD37-657C-4212-88D3-D76A89BA770F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3DFD37-657C-4212-88D3-D76A89BA770F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3DFD37-657C-4212-88D3-D76A89BA770F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,9 +34,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F4771BD6-6E4A-4805-9ADB-0848F496EC37} = {CADD3547-6CA5-4B1B-B17A-19F751FE9E67}
 		{54BEFB96-2D1F-4CBE-8777-42FE28813431} = {21EBD320-F198-4DD0-BAF7-EF9188461F7A}
-		{AF5BBFFF-68D9-45F6-9F03-14DC43CFAB43} = {CADD3547-6CA5-4B1B-B17A-19F751FE9E67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8751F8C6-94D0-4B11-B96A-B2A240D4B502}
