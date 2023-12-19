@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Program
+namespace DataStructure
 {
-    static void Main(string[] args)
+    internal class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
