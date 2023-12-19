@@ -122,6 +122,11 @@ namespace SortingAlgorithm
             PrintOperationCount(comparisonCount, swapCount);
         }
 
+        public static void MergeSort(int[] array)
+        {
+
+        }
+
         private static void PrintOperationCount(int comparisonCount, int swapCount)
         {
             Console.WriteLine($"비교 횟수 : {comparisonCount}\n교환 횟수 : {swapCount}\n");
