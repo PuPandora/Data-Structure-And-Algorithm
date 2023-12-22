@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Pandora
+namespace Pandora.Collections.Generic
 {
     internal class List<T>
     {
