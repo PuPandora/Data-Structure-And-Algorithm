@@ -51,14 +51,14 @@ namespace Pandora.Collections.Generic
         /// <summary>
         /// 스택에 요소를 위에 추가하는 함수
         /// </summary>
-        public void Push(T data)
+        public void Push(T item)
         {
             if (_size >= _items.Length)
             {
                 EnsureCapacity();
             }
 
-            _items[_size] = data;
+            _items[_size] = item;
 
             _size++;
             Count++;
@@ -80,6 +80,22 @@ namespace Pandora.Collections.Generic
         public void Clear()
         {
             Count = 0;
+        }
+
+        /// <summary>
+        /// 스택에 해당 요소와 같은 값을 가진 요소가 있는지 확인합니다.
+        /// </summary>
+        public bool Contains(T item)
+        {
+            foreach (T _item in _items)
+            {
+                if (item.Equals(_item))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -125,11 +141,6 @@ namespace Pandora.Collections.Generic
             {
                 yield return _items[i];
             }
-        }
-
-        public void ViewOriginalStack()
-        {
-            System.Collections.Generic.Stack<int> stack = new System.Collections.Generic.Stack<int>();
         }
     }
 }
